@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require fastclick
+//= require modernizr
+//= require foundation
+//= require underscore
+//= require backbone
+//= require marionette
