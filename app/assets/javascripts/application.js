@@ -16,4 +16,16 @@
 //= require foundation
 //= require underscore
 //= require backbone
+//= require backbone.babysitter
+//= require backbone.wreqr
 //= require marionette
+//= require js-routes
+//
+//= require_tree ./config
+//
+//= require ./backbone/app
+//
+//= require_tree ./backbone/lib/utilities
+//
+//= require_tree ./backbone/entities
+//= require_tree ./backbone/apps
