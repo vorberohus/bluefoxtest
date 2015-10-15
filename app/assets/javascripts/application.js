@@ -25,6 +25,9 @@
 //
 //= require ./backbone/app
 //
+//= require_tree ./backbone/lib/entities
+//= require_tree ./backbone/lib/controllers
+//= require_tree ./backbone/lib/views
 //= require_tree ./backbone/lib/utilities
 //
 //= require_tree ./backbone/entities

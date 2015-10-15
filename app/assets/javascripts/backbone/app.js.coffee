@@ -7,12 +7,10 @@
   App.addRegions
     headerRegion: '#header-region'
     mainRegion:   '#main-region'
-    footerRegion: '#footer-region'
    #dialogRegion: Marionette.Region.Dialog.extend el: '#dialog-region'
 
-  #App.addInitializer ->
-    #App.module('HeaderApp').start()
-    #App.module('FooterApp').start()
+  App.addInitializer ->
+    App.module('HeaderApp').start()
 
   #App.reqres.setHandler "default:region", ->
   # App.mainRegion
@@ -25,5 +23,9 @@
       console.log 'Can not start Backbone.history!'
   App
 
-$(document).on 'ready', =>
+doc = $(document)
+
+doc.foundation()
+
+doc.on 'ready', =>
   @BF.start()
