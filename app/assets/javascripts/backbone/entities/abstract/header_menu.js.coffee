@@ -9,10 +9,10 @@
     getHeaderMenu: ->
       new Entities.HeaderMenu [
           title: 'Работники'
-          url: '#'
+          url: Routes.employees_path()
         ,
           title: 'Вакансии'
-          url: '#'
+          url: Routes.vacancies_path()
       ]
 
   App.reqres.setHandler "get:header:menu:entities", ->

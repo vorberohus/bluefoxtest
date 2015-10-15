@@ -1,1 +1,1 @@
-<%- @linkTo @title, ''%>
+<%- @linkTo @title, @url%>

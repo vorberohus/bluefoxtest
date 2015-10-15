@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'application#index'
 
-  resources :employees
-  resources :vanacies
+  get 'dashboard' => 'application#dashboard', as: :dashboard
+
+  resource :employees
+  resource :vacancies
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -2,7 +2,7 @@
 
   App = new Marionette.Application
 
-  #App.rootRoute = Routes.dashboard_path()
+  App.rootRoute = Routes.dashboard_path()
 
   App.addRegions
     headerRegion: '#header-region'
@@ -12,8 +12,8 @@
   App.addInitializer ->
     App.module('HeaderApp').start()
 
-  #App.reqres.setHandler "default:region", ->
-  # App.mainRegion
+  App.reqres.setHandler "default:region", ->
+   App.mainRegion
 
   App.on 'start', ->
     if Backbone.history
