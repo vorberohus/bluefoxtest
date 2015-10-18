@@ -15,8 +15,11 @@
       new EmployeesApp.Show.Controller
 
     edit: (id) ->
-      new EmployeesApp.Edit.Controller
+      new EmployeesApp.Edit.Controller id
 
     new: ->
       new EmployeesApp.New.Controller
 
+  App.addInitializer ->
+    new EmployeesApp.Router
+      controller: API

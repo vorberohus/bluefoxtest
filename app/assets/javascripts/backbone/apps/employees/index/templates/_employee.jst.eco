@@ -1,0 +1,53 @@
+<div class="row employee">
+  <div class="large-3 columns">
+    <div class="photo">
+      <div class="no-photo text-center">
+        <i class="fi-camera"></i>
+      </div>
+    </div>
+  </div>
+  <div class="large-9 columns info">
+    <div class="row">
+      <div class="large-9 columns"><h5><%- @linkTo @name, Routes.edit_employee_path(@id) %></h5></div>
+      <div class="large-3 columns"><a href="#" class="button tiny alert right">удалить</a></div>
+    </div>
+    <div class="row ">
+      <div class="large-6 columns about">
+        <div class="row">
+          <div class="large-5 columns text-right">Контакты</div>
+          <div class="large-7 columns"><%= @contact %></div>
+        </div>
+        <div class="row">
+          <div class="large-5 columns text-right">Зарплата</div>
+          <div class="large-7 columns"><%= @salary %></div>
+        </div>
+        <div class="row">
+          <div class="large-5 columns text-right">Статус</div>
+          <div class="large-7 columns">
+            <span class="<%= "not" unless @status %> seeks-job text-center"><%= if @status then "Ищет работу" else "Не ищет работу" %></span>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 columns">
+        <div class="row">
+          <div class="large-12 columns text-center">
+            Умения
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class="skills">
+              <!--
+              <%# for v in @skills: %>
+                <li>
+                  <%# v %>
+                </li>
+              <%# end %>
+              -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

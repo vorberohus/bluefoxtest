@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   get 'dashboard' => 'application#dashboard', as: :dashboard
 
-  resource :employees
-  resource :vacancies
+  resources :employees
+  resources :vacancies
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

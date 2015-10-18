@@ -6,6 +6,7 @@
 
   App.addRegions
     headerRegion: '#header-region'
+    infoRegion:   '#info-region'
     mainRegion:   '#main-region'
    #dialogRegion: Marionette.Region.Dialog.extend el: '#dialog-region'
 

@@ -1,4 +1,134 @@
+$form-label-color: #777;
+
+fieldset legend
+{
+  background: none;
+  color: $form-label-color;
+}
+
+form[data-type=new]
+{
+  background-color: #efe;
+}
+
+form label
+{
+  font-size: 1em;
+  font-weight: bold;
+  color: $form-label-color;
+  padding: 0.3em;
+}
+
+form footer
+{
+  height:45px;
+}
+
+.button
+{
+  margin:0px;
+}
+
 .container
 {
   padding:15px;
+}
+
+.list
+{
+  display: block;
+  margin:0px;
+  padding:0px;
+
+  li 
+  {
+    display:block;
+    margin-top:5px;
+    text-decoration: none;
+
+    .employee
+    {
+      font-family: Roboto;
+      background-color:#eee;
+
+      .about
+      {
+        border-right: 1px dashed #aaa;
+
+        .columns
+        {
+          margin:10px 0px;
+        }
+
+        .seeks-job
+        {
+          display: block;
+          padding: 3px 7px;
+          background-color: #368a55;
+          color: white;
+        }
+
+        .not
+        {
+          background-color: #cf2a0e;
+        }
+      }
+
+      .skills
+      {
+        li
+        {
+          display: inline-block;
+          background-color: #444;
+          color:white;
+          padding:1px 6px;
+          border-radius:3px;
+        }
+      }
+    }
+  }
+}
+
+.photo
+{
+  margin-top:17px;
+  height:160px;
+  width: 120px;
+  background-color: #dde;
+  border: 1px dashed #444;
+}
+
+.no-photo
+{
+  padding:20px;
+  height:100%;
+  vertical-align: middle;
+  font-size: 72px;
+  color: #777;
+}
+
+.info
+{
+  height:200px;
+}
+
+.total
+{
+  background-color: #666;
+  border-radius:5px;
+  padding:3px 5px;
+  margin-top: 2px;
+  font:24px bold;
+  color: white;
+}
+
+.list-header
+{
+  background-color:#333;
+  padding:5px;
+}
+
+.empty
+{
+  background-color:#eee;
 }

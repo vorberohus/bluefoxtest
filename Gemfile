@@ -8,8 +8,11 @@ gem 'sqlite3'
 
 gem 'thin'
 
+gem 'responders'
+
 gem 'bower-rails'
 gem 'modernizr_rails' # Unfortunately can't include from bower install
+gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

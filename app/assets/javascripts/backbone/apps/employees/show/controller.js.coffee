@@ -5,3 +5,6 @@
     initialize: ->
       @layout = @getLayout()
       @show @layout
+
+    getLayout: ->
+      new Show.Layout

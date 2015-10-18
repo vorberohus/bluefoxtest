@@ -4,6 +4,10 @@
 
   _.extend Marionette.View::,
 
+    setInstancePropertiesFor: (args...) ->
+      for key, val of _.pick @options, args...
+        @[key] = val
+
     remove: (args...) ->
       console.log "remove", @
       _remove.apply @, args

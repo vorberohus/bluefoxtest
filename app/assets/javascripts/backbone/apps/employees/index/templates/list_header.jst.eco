@@ -1,0 +1,8 @@
+<div class="large-1 columns">
+  <%- @linkTo 'создать', Routes.new_employee_path(), class: 'button tiny success'%>
+</div>
+<div class="large-1 columns">
+  <div class="total text-center right">
+    0
+  </div>
+</div>

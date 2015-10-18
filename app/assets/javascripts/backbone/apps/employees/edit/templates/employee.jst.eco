@@ -1,0 +1,38 @@
+<fieldset>
+  <legend>Основная информация</legend>
+  <div class='row'>
+    <div class='large-3 columns'>
+      <label for='name' class='right'>Имя</label>
+    </div>
+    <div class='large-6 columns left'>
+      <input type='text' name='name' id='name' placeholder="Иван Иванович Иванов" value="<%= @name %>" />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-3 columns'>
+      <label for='contact' class='right'>Контакт</label>
+    </div>
+    <div class='large-6 columns left'>
+      <input type='text' name='contact' id='contact' value="<%= @contact %>" />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-3 columns'>
+      <label for='salary' class='right'>Зарплата</label>
+    </div>
+    <div class='large-6 columns left'>
+      <input type='text' name='salary' id='salary' value="<%= @salary %>" />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-3 columns'>
+      <label for='status' class='right'>Статус</label>
+    </div>
+    <div class='large-2 columns left'>
+      <div class='switch'>
+        <input type='checkbox' name='status' id='status' <%= "checked" if @status %> />
+        <label for='status'></label>
+      </div>
+    </div>
+  </div>
+</fieldset>

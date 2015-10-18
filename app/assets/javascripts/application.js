@@ -18,6 +18,7 @@
 //= require backbone
 //= require backbone.babysitter
 //= require backbone.wreqr
+//= require backbone.syphon
 //= require marionette
 //= require js-routes
 //
@@ -29,6 +30,7 @@
 //= require_tree ./backbone/lib/controllers
 //= require_tree ./backbone/lib/views
 //= require_tree ./backbone/lib/utilities
+//= require_tree ./backbone/lib/components
 //
 //= require_tree ./backbone/entities
 //= require_tree ./backbone/apps
