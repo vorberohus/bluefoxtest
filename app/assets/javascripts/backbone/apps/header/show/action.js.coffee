@@ -1,6 +1,6 @@
 @BF.module "HeaderApp.Show", (Show, App, Backbone, Marionette, $, _) ->
 
-  class Show.Controller extends App.Controllers.Application
+  class Show.Action extends App.Actions.BaseAction
 
     initialize: ->
       menu = App.request 'get:header:menu:entities'

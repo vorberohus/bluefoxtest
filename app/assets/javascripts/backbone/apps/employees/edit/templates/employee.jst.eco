@@ -13,7 +13,7 @@
       <label for='contact' class='right'>Контакт</label>
     </div>
     <div class='large-6 columns left'>
-      <input type='text' name='contact' id='contact' value="<%= @contact %>" />
+      <input type='text' name='contact' id='contact' placeholder="someone@example.com или +7912000000" value="<%= @contact %>" />
     </div>
   </div>
   <div class='row'>

@@ -1,6 +1,7 @@
 # A sample Bowerfile
 # Check out https://github.com/42dev/bower-rails#ruby-dsl-configuration for more options
 
+asset 'spin', git: 'git@github.com:fgnass/spin.js.git'
 asset 'backbone.syphon'
 asset 'marionette'
 asset 'foundation'

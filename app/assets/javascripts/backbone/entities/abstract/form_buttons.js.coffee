@@ -24,6 +24,7 @@
         primary: if model.isNew() then 'Создать' else 'Сохранить'
         cancel: 'Отмена'
         placement: 'right'
+      buttons
 
   App.reqres.setHandler 'form:button:entities', (buttons={}, model) ->
     API.getFormButtons buttons, model

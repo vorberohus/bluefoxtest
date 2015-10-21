@@ -9,7 +9,7 @@
         @[key] = val
 
     remove: (args...) ->
-      console.log "remove", @
+      console.log 'remove', @
       _remove.apply @, args
 
     templateHelpers: ->

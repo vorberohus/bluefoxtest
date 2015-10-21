@@ -1,6 +1,6 @@
 @BF.module "InfoApp.Show", (Show, App, Backbone, Marionette, $, _) ->
 
-  class Show.Controller extends App.Controllers.Application
+  class Show.Action extends App.Actions.BaseAction
 
     ininialize: ->
 

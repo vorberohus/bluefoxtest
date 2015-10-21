@@ -21,6 +21,12 @@ class EmployeesController < ApplicationController
     respond_with @employee
   end
 
+  def destroy 
+    @employee = Employee.find params[:id]
+    @employee.destroy
+    respond_with @employee
+  end
+
   private
   
     def employee_params

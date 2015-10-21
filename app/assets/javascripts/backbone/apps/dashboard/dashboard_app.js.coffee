@@ -6,7 +6,7 @@
 
   API =
     show: ->
-      new DashboardApp.Show.Controller
+      new DashboardApp.Show.Action
 
   App.addInitializer ->
     new DashboardApp.Router

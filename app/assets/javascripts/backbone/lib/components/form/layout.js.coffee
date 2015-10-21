@@ -17,6 +17,10 @@
 
     triggers:
       'submit': 'form:submit'
+      'click button[data-form-button=cancel]': 'form:cancel'
+
+    modelEvents:
+      'change:_errors': 'changeErrors'
 
     ui:
       buttonContainer: 'ul.inline-list'
@@ -38,4 +42,20 @@
 
     getFormDataType: ->
       if @model.isNew() then "new" else "edit"
+
+    changeErrors: (model, errors, options) ->
+      if @config.errors
+        if _.isEmpty(errors) then @removeErrors() else @addErrors errors
+
+    removeErrors: ->
+      @$('.error').removeClass('error').find('small').remove()
+
+    addErrors: (errors={}) ->
+      for name, array of errors
+        @addError name, array[0]
+
+    addError: (name, error) ->
+      el = @$("[name='#{name}']")
+      sm = $("<small>").addClass('error').text(error)
+      el.after(sm).closest(".row").addClass('error')
 

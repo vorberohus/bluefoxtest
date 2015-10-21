@@ -9,16 +9,17 @@
 
   API =
     index: ->
-      new EmployeesApp.Index.Controller
-    
-    show: (id) ->
-      new EmployeesApp.Show.Controller
-
-    edit: (id) ->
-      new EmployeesApp.Edit.Controller id
+      new EmployeesApp.Index.Action
 
     new: ->
-      new EmployeesApp.New.Controller
+      new EmployeesApp.New.Action
+    
+    show: (id) ->
+      new EmployeesApp.Show.Action id
+
+    edit: (id) ->
+      new EmployeesApp.Edit.Action id
+
 
   App.addInitializer ->
     new EmployeesApp.Router

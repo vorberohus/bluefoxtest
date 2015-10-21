@@ -4,7 +4,7 @@
 
   API =
     show: ->
-      new HeaderApp.Show.Controller
+      new HeaderApp.Show.Action
         region: App.headerRegion
 
   HeaderApp.on "start", ->

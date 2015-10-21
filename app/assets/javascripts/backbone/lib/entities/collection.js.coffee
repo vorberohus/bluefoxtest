@@ -1,3 +1,4 @@
 @BF.module "BaseEntities", (BaseEntities, App, Backbone, Marionette, $, _) ->
 
-  class BaseEntities.Model extends Backbone.Model
+  class BaseEntities.Collection extends Backbone.Collection
+

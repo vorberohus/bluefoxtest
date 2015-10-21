@@ -4,6 +4,8 @@
 
     navigate: (route, options={}) ->
       #set defaults if needed
+      route = '#'+route if route.charAt(0) != '#'
+      console.log route
       Backbone.history.navigate route, options
 
     getCurrentRoute: ->

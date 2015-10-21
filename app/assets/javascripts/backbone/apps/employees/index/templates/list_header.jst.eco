@@ -3,6 +3,6 @@
 </div>
 <div class="large-1 columns">
   <div class="total text-center right">
-    0
+    <%= @items.length %>
   </div>
 </div>

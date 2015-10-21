@@ -3,6 +3,6 @@
   class Edit.EmployeeView extends App.Views.ItemView
     template: 'employees/edit/employee'
 
-    form:
+    form: ->
       buttons:
         placement: 'left'
